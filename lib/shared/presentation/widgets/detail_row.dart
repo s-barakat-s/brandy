@@ -1,0 +1,21 @@
+﻿import 'package:brandy/shared/presentation/widgets/info_row.dart';
+import 'package:flutter/material.dart';
+
+class DetailRow extends StatelessWidget {
+  const DetailRow({
+    super.key,
+    required this.label,
+    required this.value,
+  });
+
+  final String label;
+  final String value;
+
+  @override
+  Widget build(BuildContext context) {
+    return InfoRow(
+      label: label,
+      value: value,
+    );
+  }
+}
